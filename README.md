@@ -37,7 +37,7 @@ Presented By :
          
          
  28th March 2023: Data Collection and presenting purposal
-                  Divide the tasks between team members
+                  Team will be working together
                   
  30th March 2023: Cleanup data 
                   SQL database
