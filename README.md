@@ -1,4 +1,4 @@
-# Project3 Hosing prices in Perth 
+# Project3 Housing  prices in Perth 
             Analysisng the factors determining the prices 
 
 Presented By : 
