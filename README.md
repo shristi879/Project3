@@ -20,7 +20,7 @@ Presented By :  Yinghen
       
 ##BACK END:
 
-       JAVASCRIPT Libratry
+       JAVASCRIPT Library
        A dashboard page with multiple charts that all reference the same data.
        -Bar chart
        -line chart
