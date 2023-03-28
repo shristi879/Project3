@@ -33,9 +33,23 @@ Presented By :
        -provided three different unique ways to view data.
          
          
- First day: Data Collection and presenting purposal
+ 28th March 2023: Data Collection and presenting purposal
+                  Dividd the tasks between team members
+                  
+ 30th March 2023: 
  
- Although we work in team we divided  the task.
+ 
+ 3rd April 2023:
+ 
+ 
+ 4th April 2023:
+ 
+ 
+ 6th April 2023:
+ 
+ 
+ 
+11th April 2023:
          
         
       
