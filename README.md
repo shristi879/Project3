@@ -1,5 +1,11 @@
 # Project3 Housing  prices in Perth 
             Analysisng the different factors determining the houseing price
+            
+            
+## Purpose and background information 
+
+             Identify the trend and pattern of housing price in different suburbs
+             Factors affecting the house price in Perth 
 
 Presented By : 
 
