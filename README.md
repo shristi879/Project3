@@ -1,5 +1,5 @@
 # Project3 Housing  prices in Perth 
-            Analysisng the factors determining the prices 
+            Analysisng the different factors determining the houseing price
 
 Presented By : 
 
@@ -9,7 +9,7 @@ Presented By :
                
                 Sushil
                 
-                Dasrath
+                Dashrath
                  
                  
 ## DATA and DELIVERY:
@@ -37,7 +37,7 @@ Presented By :
          
          
  28th March 2023: Data Collection and presenting purposal
-                  Dividd the tasks between team members
+                  Divide the tasks between team members
                   
  30th March 2023: Cleanup data 
                   SQL database
