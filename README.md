@@ -16,7 +16,10 @@ Presented By :
  
      - We ARE USING SQL to show our database.
      - The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, and the chosen database.
-     - The source of our database is  KAGGLE.
+     
+    
+   ## Data Source
+       - KAGGLE.
       
 ##BACK END:
 
@@ -36,16 +39,19 @@ Presented By :
  28th March 2023: Data Collection and presenting purposal
                   Dividd the tasks between team members
                   
- 30th March 2023: 
+ 30th March 2023: Cleanup data 
+                  SQL database
+                  Python Flask API (HTML,CSS,JavaScript)
+                  
+ 3rd April 2023: JavaScript Library 
+                 Data Visualisation 
+                 Leaflet 
  
  
- 3rd April 2023:
+ 4th April 2023: Data Visualisation 
+                 
  
- 
- 4th April 2023:
- 
- 
- 6th April 2023:
+ 6th April 2023: Prepare PowerPoint presentation 
  
  
  
