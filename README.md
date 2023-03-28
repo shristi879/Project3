@@ -16,7 +16,7 @@ Presented By :  Yinghen
  
      - we ARE USING SQL to show our database.
       -The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, and the chosen database.
-      T-he source of our database KAGGLE.
+      -The source of our database is  KAGGLE.
       
 ##BACK END:
 
