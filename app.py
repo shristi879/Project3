@@ -1,16 +1,38 @@
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, func
+from flask import Flask, render_template
+import pandas as pd
 
-from flask import Flask, jsonify
+app = Flask(__name__)
 
-import datetime as dt
+# read csv file
+df = pd.read_csv('clean_data.csv')
 
+@app.route('/')
+def index():
+    return render_template('map.html')
 
-engine = create_engine("sqlite:///clean_date.sqlite")
+@app.route('/data')
+def get_data():
+    # convert to JSON
+    geojson = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    for _, row in df.iterrows():
+        feature = {
+            "type": "Feature",
+            "properties": {
+                "address": row['ADDRESS'],
+                "price": row['PRICE'],
+                "year": row['DATE_SOLD'],
+                "land_area": row['LAND_AREA']
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [row['LONGITUDE'], row['LATITUDE']]
+            }
+        }
+        geojson['features'].append(feature)
+    return geojson
 
-Base = automap_base()
-
-Base.prepare(engine, reflect=True)
-
+if __name__ == '__main__':
+    app.run(debug=True)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Housing Prices in Perth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha384-BavB+0t0JvSC33q3ez9hTSdFZlC+GLxpWhxW06kCTyBfzvtwKnvCEAd+hmG8CZ5Q" crossorigin=""/>
+    <style>
+        body { margin: 0; padding: 0; }
+        #map { position: absolute; top: 0; bottom: 0; width: 100%; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha384-vV7jW8T9HLd+uZjp6aZGPeWQT1Kl47MP6UdwSNLcG7VWbT8ZS7Cp+eMNTv7oz3xM" crossorigin=""></script>
+<script>
+    var map = L.map('map').setView([-31.953512, 115.857048], 12);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // get data
+    fetch('/data')
+        .then(response => response.json())
+        .then(data => {
+            // map layer
+            L.geoJSON(data, {
+                onEachFeature: function (feature, layer) {
+                    layer.bindPopup('<h4>' + feature.properties.address + '</h4><p>价格：$' + feature.properties.price + '<br>出售年月：' + feature.properties.year + '<br>土地面积：' + feature.properties.land_area + ' 平方米</p>');
+                }
+            }).addTo(map);
+        });
+</script>
+</body>
+</html>
