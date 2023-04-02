@@ -28,7 +28,7 @@
             // map layer
             L.geoJSON(data, {
                 onEachFeature: function (feature, layer) {
-                    layer.bindPopup('<h4>' + feature.properties.address + '</h4><p>价格：$' + feature.properties.price + '<br>出售年月：' + feature.properties.year + '<br>土地面积：' + feature.properties.land_area + ' 平方米</p>');
+                    layer.bindPopup('<h4>' + feature.properties.address + '</h4><pPrice:$' + feature.properties.price + '<br>DATE_SOLD:' + feature.properties.year + '<br>Land area:' + feature.properties.land_area + ' </p>');
                 }
             }).addTo(map);
         });
