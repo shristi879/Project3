@@ -1,10 +1,7 @@
 # Import the necessary libraries
-import numpy as np
-import pandas as pd
 from flask import Flask
 from flask_cors import CORS
 from sqlalchemy import create_engine
-from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from flask import Flask, jsonify
 from sqlalchemy import Column, Integer, String, Float
