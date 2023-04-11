@@ -23,6 +23,13 @@ Presented By :
      - We ARE USING SQL to show our database.
      - The project is powered by a Python Flask API and includes HTML/CSS, JavaScript, and the chosen database.
      
+ 
+ ##PURPOSE OF PROJECT 
+   
+   To provide an overview of how the housing prices have changed over the past decade, highlighting any significant trends or patterns in 
+   the data also focus on five suburbs in perth with the highest sold prices and it will include a map with markers indicating the location and price of each property 
+   To analyse out the factors thats affects the housing prices so that we can make the best decision while investing in real estate
+     
     
    ## Data Source
        - KAGGLE.
@@ -62,6 +69,7 @@ Presented By :
  
  
 11th April 2023: Presentation day 
+
          
         
       
