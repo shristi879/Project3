@@ -60,7 +60,7 @@ def welcome():
 def price():
     session = Session(bind=engine)
 
-    results = session.query(Housing.SUBURB, Housing.PRICE, Housing.DATE_SOLD, Housing.LAND_AREA).all()
+    results = session.query(Housing.SUBURB, Housing.PRICE, Housing.DATE_SOLD, Housing.LAND_AREA).limit(200).all()
     session.close()
 
     # Convert each Row to a dictionary using .asdict()
@@ -72,7 +72,7 @@ def price():
 def coordinate():
     session = Session(bind=engine)
 
-    results = session.query(Housing.LATITUDE, Housing.LONGITUDE, Housing.ADDRESS, Housing.PRICE).all()
+    results = session.query(Housing.LATITUDE, Housing.LONGITUDE, Housing.ADDRESS, Housing.PRICE).limit(200).all()
     session.close()
 
     # Convert each row to a dictionary using .asdict()
